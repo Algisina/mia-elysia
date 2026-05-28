@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Mia Elysia | Meine Linksammlung</title>
+  <meta name="description" content="Mia Elysia aus Bonn & Köln – hier findest Du alle meine Links kompakt auf einen Blick. Mein kleines digitales Zuhause. ♥">
+  <meta property="og:title" content="Mia Elysia | Meine Linksammlung">
+  <meta property="og:description" content="Mia Elysia aus Bonn & Köln – hier findest Du alle meine Links kompakt auf einen Blick. Mein kleines digitales Zuhause. ♥">
+  <meta property="og:image" content="https://mia-elysia.de/portrait.jpg">
+  <meta property="og:url" content="https://mia-elysia.de">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Mia Elysia">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mia Elysia | Meine Linksammlung">
+  <meta name="twitter:description" content="Mia Elysia aus Bonn & Köln – hier findest Du alle meine Links kompakt auf einen Blick. Mein kleines digitales Zuhause. ♥">
+  <meta name="twitter:image" content="https://mia-elysia.de/portrait.jpg">
+  <link rel="icon" type="image/jpeg" href="https://me-escort.de/wp-content/uploads/2021/03/cropped-Mia_Elysia_Favicon-1-270x270.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --pink:      #f0306a;
+      --btn-bg:    #f9cdd6;
+      --btn-hover: #f4b0bf;
+      --btn-text:  #1a1a1a;
+      --text:      #1a1a1a;
+      --text-light:#444444;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: #fff;
+      color: var(--text);
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ══════════════════════════════
+       HEADER — pink bar + overlapping portrait
+    ══════════════════════════════ */
+    .site-header {
+      position: relative;
+      text-align: center;
+      /* pink bar height */
+      padding-top: 0;
+      margin-bottom: 24px;
+    }
+
+    .header-bar {
+      background: var(--pink);
+      height: 130px;
+      width: 100%;
+    }
+
+    .portrait-wrap {
+      position: absolute;
+      left: 50%;
+      /* centre the circle so it straddles the bar bottom edge */
+      top: 50px;          /* halfway into the bar */
+      transform: translateX(-50%);
+    }
+
+    .portrait {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 12%;
+      display: block;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    /* spacer so content starts below the overlapping portrait */
+    .header-spacer {
+      height: 100px; /* portrait-height/2 + a little breathing room */
+    }
+
+    /* ── LOGO ── */
+    .logo-wrap {
+      text-align: center;
+      margin-bottom: 36px;
+      padding: 0 20px;
+    }
+    .logo {
+      max-width: 320px;
+      height: auto;
+      display: inline-block;
+    }
+
+    /* ══════════════════════════════
+       MAIN CONTENT
+    ══════════════════════════════ */
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 32px 64px;
+    }
+
+    /* ── H1 ── */
+    .main-heading {
+      font-family: 'Judson', serif;
+      font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+      font-weight: 500;
+      line-height: 1.3;
+      text-align: center;
+      color: var(--text);
+      margin-bottom: 28px;
+    }
+
+    /* ── Elementor short divider ── */
+    .el-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--text);
+      margin: 0 0 28px 0;
+    }
+
+    /* ── Intro text ── */
+    .intro-para {
+      font-size: 1rem;
+      color: var(--text-light);
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 20px;
+      line-height: 1.8;
+    }
+
+    .intro-bullets {
+      font-size: 1rem;
+      color: var(--text-light);
+      line-height: 2.1;
+      margin-bottom: 20px;
+    }
+
+    .intro-bullets a,
+    .intro-para a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .intro-bullets a:hover,
+    .intro-para a:hover { color: var(--pink); }
+
+    .outro-para {
+      font-size: 1rem;
+      color: var(--text-light);
+      text-align: center;
+      margin-bottom: 52px;
+      line-height: 1.8;
+    }
+
+    /* ── Section headings ── */
+    .section-heading {
+      font-family: 'Judson', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      font-weight: 500;
+      text-align: center;
+      color: var(--text);
+      margin: 52px 0 24px;
+    }
+
+    .sub-heading {
+      font-family: 'Judson', serif;
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      font-weight: 400;
+      text-align: center;
+      color: var(--text);
+      margin: 48px 0 20px;
+    }
+
+    /* ── Buttons ── */
+    .btn-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 24px;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      text-decoration: none;
+      font-family: 'Lora', serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      border: none;
+      border-radius: 2px;
+      transition: background 0.18s ease;
+    }
+
+    .btn-link:hover { background: var(--btn-hover); }
+    .btn-link .icon { font-size: 1rem; flex-shrink: 0; }
+
+    /* ── Footer bar ── */
+    .footer-bar {
+      background: var(--pink);
+      padding: 20px 24px;
+      text-align: center;
+      margin-top: 64px;
+    }
+    .footer-bar a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+    }
+    .footer-bar a:hover { text-decoration: underline; }
+
+    /* ── Mobile ── */
+    @media (max-width: 500px) {
+      .page { padding: 0 20px 48px; }
+      .header-bar { height: 100px; }
+      .portrait-wrap { top: 35px; }
+      .portrait { width: 120px; height: 120px; }
+      .header-spacer { height: 80px; }
+      .logo { max-width: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="site-header">
+    <div class="header-bar"></div>
+    <div class="portrait-wrap">
+      <img
+        class="portrait"
+        src="portrait.jpg"
+        alt="Mia Elysia Portrait"
+      >
+    </div>
+  </header>
+
+  <!-- ══ MAIN ══ -->
+  <div class="page">
+
+    <div class="header-spacer"></div>
+
+    <!-- Logo -->
+    <div class="logo-wrap">
+      <img
+        class="logo"
+        src="logo.png"
+        alt="Mia Elysia"
+      >
+    </div>
+
+    <!-- H1 -->
+    <h1 class="main-heading">
+      Meine Welt als Mia Elysia aus Bonn &amp; Köln –<br>Hier findest du mich überall
+    </h1>
+
+    <div class="el-divider"></div>
+
+    <!-- Intro -->
+    <p class="intro-para">
+      Ich bin Mia Elysia aus Bonn und Köln – und vielleicht hast du Lust, mich ein bisschen näher kennenzulernen. Diese Seite ist mein kleines digitales Wohnzimmer – ein Ort, an dem du alles findest, was zu meinem öffentlichen Leben gehört.
+    </p>
+
+    <div class="intro-bullets">
+      🌹 Auf <a href="https://www.instagram.com/elysia.mia/" target="_blank" rel="noopener">Instagram</a> &amp; <a href="https://twitter.com/mia_elysia" target="_blank" rel="noopener">Twitter</a> zeige ich kleine Ausschnitte meines Alltags und meiner Arbeit.<br>
+      💬 Über meinen <a href="https://tf642737a.emailsys1a.net/134/5453/f5824570a9/subscribe/form.html?_g=1658148831" target="_blank" rel="noopener">Newsletter</a> teile ich heiße Erlebnisse, neue Blogartikel, Specials für Abonnenten und meine neusten Fotos<br>
+      🎁 Meine <a href="https://www.wishlistr.com/mia-elysia-escort" target="_blank" rel="noopener">Wishlists</a> verraten dir, worüber ich mich freue – kleine Aufmerksamkeiten mit Bedeutung für mich privat oder meinen Gnadenhof.<br>
+      📖 In <a href="#anker_medien">Magazinen &amp; Artikeln</a> findest du meine Fotos und Geschichten, die einen Eindruck davon geben, wie ich öffentlich auftrete.
+    </div>
+
+    <p class="outro-para">
+      Egal, ob du mich online verfolgst, liest oder einfach stöberst – willkommen in meiner Linksammlung – in meiner Welt.
+    </p>
+
+    <!-- ── Links ── -->
+    <div class="el-divider"></div>
+    <h2 class="section-heading">Hier findest du mich überall 🌍</h2>
+
+    <div class="btn-list">
+      <a class="btn-link" href="https://me-escort.de/" target="_blank" rel="noopener"><span class="icon">🌐</span> Mia Elysia Website</a>
+      <a class="btn-link" href="https://me-escort.de/mia-talks/" target="_blank" rel="noopener"><span class="icon">💬</span> Mia Elysia Talks</a>
+      <a class="btn-link" href="https://me-escort.de/buchung/" target="_blank" rel="noopener"><span class="icon">📋</span> Direkt zur Buchung</a>
+      <a class="btn-link" href="https://me-escort.de/touren/" target="_blank" rel="noopener"><span class="icon">🚗</span> Auf Tour</a>
+      <a class="btn-link" href="https://me-escort.de/galerie/" target="_blank" rel="noopener"><span class="icon">🖼</span> Meine Bildergalerie</a>
+      <a class="btn-link" href="https://me-escort.de/casual-moments/" target="_blank" rel="noopener"><span class="icon">🤍</span> Casual Moments</a>
+      <a class="btn-link" href="https://me-escort.de/glamour-moments/" target="_blank" rel="noopener"><span class="icon">✨</span> Glamour Moments</a>
+      <a class="btn-link" href="https://me-escort.de/experiences/" target="_blank" rel="noopener"><span class="icon">⭐</span> Mia Elysia Experiences</a>
+      <a class="btn-link" href="https://me-escort.de/faq/" target="_blank" rel="noopener"><span class="icon">❓</span> Meine FAQs</a>
+      <a class="btn-link" href="https://tf642737a.emailsys1a.net/134/5453/f5824570a9/subscribe/form.html?_g=1658148831" target="_blank" rel="noopener"><span class="icon">✉️</span> Mias Newsletter</a>
+      <a class="btn-link" href="https://twitter.com/mia_elysia" target="_blank" rel="noopener"><span class="icon">𝕏</span> Twitter</a>
+      <a class="btn-link" href="https://www.instagram.com/elysia.mia/" target="_blank" rel="noopener"><span class="icon">📸</span> Instagram</a>
+    </div>
+
+    <!-- ── Wishlists ── -->
+    <div class="el-divider" style="margin-top:48px;"></div>
+    <h3 class="sub-heading">- Wishlists -</h3>
+    <div class="btn-list">
+      <a class="btn-link" href="https://www.wishlistr.com/mia-elysia-escort" target="_blank" rel="noopener"><span class="icon">🎁</span> Wishlist</a>
+      <a class="btn-link" href="https://www.amazon.de/hz/wishlist/ls/20SHQXQTOWU1M?ref_=wl_share" target="_blank" rel="noopener"><span class="icon">🛒</span> Amazon Wishlist</a>
+    </div>
+
+    <!-- ── Media ── -->
+    <div class="el-divider" id="anker_medien" style="margin-top:48px;"></div>
+    <h3 class="sub-heading">- Media -</h3>
+    <div class="btn-list">
+      <a class="btn-link" href="https://www.vice.com/de/article/3ab8x5/menschen-erzahlen-warum-sie-mit-sexarbeit-angefangen-haben" target="_blank" rel="noopener"><span class="icon">📄</span> Mia Elysia im Vice Magazin</a>
+      <a class="btn-link" href="https://www.peecho.com/checkout/150790356341616795/1051922/bombshell-print-magazine-september-2021-mia-elysia-cover" target="_blank" rel="noopener"><span class="icon">📷</span> Mia auf dem Bombshell Cover September 2021</a>
+      <a class="btn-link" href="https://www.femmerebellemagazine.com/purchase" target="_blank" rel="noopener"><span class="icon">📷</span> Mia im femme rebelle Magazine September 2021 allure edition</a>
+    </div>
+
+  </div><!-- /.page -->
+
+  <div class="footer-bar">
+    <a href="https://me-escort.de/impressum/" target="_blank" rel="noopener">Impressum</a>
+  </div>
+
+</body>
+</html>
